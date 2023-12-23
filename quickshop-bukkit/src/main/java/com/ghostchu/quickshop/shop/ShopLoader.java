@@ -194,7 +194,7 @@ public class ShopLoader implements SubPasteItem {
         }
         // Load to RAM
         plugin.getShopManager().registerShop(shop, false); // persist=false to load to memory (it already persisted)
-        if (Util.isLoaded(location)) {
+        if (false && Util.isLoaded(location)) { // Never going to be loaded
             // Load to World
             //plugin.getShopManager().loadShop(shop); // Patch the shops won't load around the spawn
             shopsLoadInNextTick.add(shop);
